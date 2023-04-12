@@ -580,6 +580,14 @@ video {
   margin-top: 2rem;
 }
 
+.mr-56 {
+  margin-right: 14rem;
+}
+
+.mr-16 {
+  margin-right: 4rem;
+}
+
 .flex {
   display: flex;
 }
@@ -736,6 +744,10 @@ video {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.pr-56 {
+  padding-right: 14rem;
 }
 
 .text-center {

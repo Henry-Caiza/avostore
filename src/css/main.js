@@ -17,6 +17,7 @@ async function fetchData() {
     const json = await response.json();
     const data = json.data;
     //console.log(json);
+    appNode.innerHTML = ""
     const allElements = [];
     data.forEach(element => {
         const img = document.createElement('img');
@@ -58,7 +59,7 @@ async function fetchData() {
 
             const description = document.createElement('p');
             description.textContent = element.attributes.description;
-            description.className = 'text-green-950'
+            description.className = 'text-green-950 mr-16'
             const btn = document.createElement('button');
             btn.textContent = 'Cerrar';
             btn.className = 'font-bold'
