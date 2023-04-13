@@ -26,11 +26,11 @@ async function fetchData() {
 
         const title = document.createElement('h2');
         title.textContent = element.name;
-        title.className = 'text-xl text-green-100 font-semibold'
+        title.className = 'text-xs md:text-xl text-green-100 font-semibold'
 
         const price = document.createElement('div');
         price.textContent = formatPrice(element.price);
-        price.className = 'text-md text-green-100'
+        price.className = 'text-xs md:text-md text-green-100'
 
         const content = document.createElement('div');
         content.appendChild(price);
@@ -39,7 +39,7 @@ async function fetchData() {
 
         const container = document.createElement('div');
         container.append(img, content);
-        container.className = 'w-80 border-2 border-green-500 rounded-xl transform transition-all hover:-translate-y-2 hover:shadow-2xl'
+        container.className = 'w-36 sm:w-60 md:w-80 border-2 border-green-500 rounded-xl transform transition-all hover:-translate-y-2 hover:shadow-2xl'
 
         container.addEventListener('click', () => {
             modal.innerHTML = ''

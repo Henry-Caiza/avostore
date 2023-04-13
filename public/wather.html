@@ -3,15 +3,78 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="./img/wea.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/tailwind.css" />
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 
-<body>
-    <label for="pais"></label>
-    <input type="text" placeholder="Ingresa una ubicación">
-    <button>Mira el clima</button>
+<body class="bg-sky-950">
+    <header class="w-11/12 md:w-9/12  xl:w-3/5 mx-auto mt-8">
+        <div class="flex place-content-between items-center">
+            <div class="flex gap-1 sm:gap-4 cursor-pointer">
+                <a class="text-xl mt-2 sm:text-4xl leading-8 font-extrabold tracking-tight text-sky-400 "
+                    href="wather.html">
+                    WeatherApp
+                </a>
+                <img class="w-8 sm:w-12" src="img/wea.png" alt="">
+            </div>
+            <ul class="flex gap-2 sm:gap-6">
+                <li class="border border-sky-900 hover:bg-sky-900 sm:h-12 sm:w-48 rounded-lg">
+                    <a class=" text-sm sm:text-3xl h-full w-full leading-8 font-extrabold tracking-tight text-green-400 flex justify-center items-center"
+                        href="index.html">
+                        Avo <img class="w-6 sm:w-8 sm:h-8" src="img/avo.png" alt=""> Store
+                    </a>
+                </li>
+                <li
+                    class="border border-sky-900 hover:bg-sky-900 sm:h-12 sm:w-20 rounded-lg flex justify-center items-center">
+                    <a class=" text-sm sm:text-3xl leading-8 font-extrabold tracking-tight text-sky-400"
+                        href="https://openweathermap.org/api" target="_blank">
+                        API
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </header>
+    <main class="w-11/12 md:w-9/12 min-h-screen xl:w-3/5 mx-auto mt-12 sm:mt-20">
+        <section class="flex flex-col gap-2">
+            <label class="text-sky-300 sm:text-xl font-bold" for="pais">Ubicación</label>
+            <div class="flex">
+                <input
+                    class="bg-sky-200 w-72 h-12 px-4 rounded-l-lg text-sky-950 placeholder:text-sky-600 focus:outline-none focus:border-2 focus:border-green-400 focus:bg-sky-100 focus:text-sky-950 sm:text-lg"
+                    type="text" id="pais" placeholder="Ingresa una ubicación">
+                <button
+                    class="bg-sky-400 px-4 rounded-r-lg h-12 text-sky-950 text-sm sm:text-lg font-semibold hover:bg-green-400">Mira
+                    el clima</button>
+            </div>
+        </section>
+        <section
+            class="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:gap-10 lg:grid-cols-4 2xl:gap-10 2xl:grid-cols-4 justify-items-center"
+            id="main">
+        </section>
+    </main>
+    <footer class="bg-sky-900 w-full mt-12 h-52 bg-fixed">
+        <div class="footer-header-container">
+            <span class="bg-green-100"></span>
+            <div class="icon-container">
+                <a class="ico-facebook"></a>
+                <a class="ico-youtube"></a>
+                <a class="ico-twitter"></a>
+                <a class="ico-linkedin"></a>
+                <a class="ico-instagram"></a>
+            </div>
+            <span class="bg-green-100"></span>
+        </div>
+        <div class="footer-body-container">
+            <img class="img-logo-footer" src="./img/wea.png" alt="">
+            <p class="text-sm text-green-100 mb-6">Copyright © 2023 - Henry Caiza</p>
+        </div>
+
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="wather.js"></script>
 </body>
