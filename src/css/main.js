@@ -45,21 +45,21 @@ async function fetchData() {
             modal.innerHTML = ''
             modal.showModal();
             const article = document.createElement('article');
-            article.className = 'flex items-center gap-8'
+            article.className = 'flex flex-col justify-items-center sm:flex-row items-center gap-2 sm:gap-8'
 
             const img = document.createElement('img');
             img.src = `https://platzi-avo.vercel.app/${element.image}`;
-            img.className = 'rounded-full'
+            img.className = 'rounded-full w-32 h-32 lg:w-64 lg:h-64'
 
             const info = document.createElement('div');
 
             const tittle = document.createElement('h2');
             tittle.textContent = element.name;
-            tittle.className = 'text-2xl font-bold text-green-950 mb-4'
+            tittle.className = 'sm:text-lg lg:text-2xl font-bold text-green-950 mb-2 sm:mb-4'
 
             const description = document.createElement('p');
             description.textContent = element.attributes.description;
-            description.className = 'text-green-950 mr-16'
+            description.className = 'text-xs sm:text-sm md:text-lg text-green-950 sm:mr-16'
             const btn = document.createElement('button');
             btn.textContent = 'Cerrar';
             btn.className = 'font-bold'

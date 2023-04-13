@@ -20,9 +20,8 @@ dialog::backdrop {
     background: #00000057;
 }
 
-dialog {
-    clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%);
-}
+
+
 
 footer {
     height: 180px;
@@ -115,5 +114,11 @@ footer {
 
     50% {
         opacity: 0%;
+    }
+}
+
+@media (min-width: 640px) {
+    dialog {
+        clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%);
     }
 }
